@@ -16,6 +16,7 @@ export default ({ config }) => ({
   },
   ios: {
     supportsTablet: true,
+    bundleIdentifier: process.env.EXPO_BUNDLE_IDENTIFIER,
   },
   android: {
     adaptiveIcon: {
