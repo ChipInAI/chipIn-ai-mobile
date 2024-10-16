@@ -24,7 +24,15 @@ export default ({ config }) => ({
       backgroundColor: "#ffffff",
     },
   },
-  plugins: ["expo-router"],
+  plugins: [
+    "expo-router",
+    [
+      "expo-dev-launcher",
+      {
+        launchMode: "most-recent",
+      },
+    ],
+  ],
   experiments: {
     typedRoutes: true,
   },
